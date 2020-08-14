@@ -1,0 +1,40 @@
+.nav-tabs>li {
+    float: none !important;
+}
+
+
+@media (min-width: 992px){
+    header .navbar-default .navbar-nav > li {
+        padding-left: 40px;
+    }
+}
+
+@media (max-width: 991px){
+    header .navbar-default .navbar-nav > li.dropdown > a .caret {
+        right: auto !important;
+        left: 0;
+    }
+}
+
+
+
+ul.nav-tabs>li:first-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-right-width: 0;
+    border-left-width: 1px;
+}
+ul.nav-tabs>li:last-child {
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+
+.js_multi_collection .nav-tabs li {
+    border-right-width: 1px;
+    border-left-width: 0;
+}

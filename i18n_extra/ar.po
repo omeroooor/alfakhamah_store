@@ -1,0 +1,632 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* website_sale
+#	* theme_laze
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0-20180602\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-16 11:12+0000\n"
+"PO-Revision-Date: 2020-07-16 11:12+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.address
+msgid "Your Address\n"
+"                                        <small> or </small>"
+msgstr "عنوانك\n"
+"                                        <small> أو </small>"
+
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.address
+msgid "Log In"
+msgstr "قم بتسجيل الدخول"
+
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.address
+msgid "Zip Code"
+msgstr "الرمز البريدي"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.address
+msgid "Street <span class=\"hidden-xs\"> and Number</span>"
+msgstr "الشارع <span class=\"hidden-xs\"> والرقم</span>"
+
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.address
+msgid "<span class=\"fa fa-long-arrow-left\"/> Back"
+msgstr "<span class=\"fa fa-long-arrow-right\"/> رجوع"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.checkout
+msgid "<span class=\"fa fa-long-arrow-left\"/> Return to Cart"
+msgstr "العودة إلى سلة التسوق<span class=\"fa fa-long-arrow-right\"/>"
+
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.extra_info
+msgid "<span class=\"btn btn-primary pull-right btn-lg o_website_form_send o_default_snippet_text\">\n"
+"                                    <span>Next </span><span class=\"fa fa-long-arrow-right\"/>\n"
+"                                </span>\n"
+"                                <span id=\"o_website_form_result\" class=\"text-danger ml8\"/>"
+msgstr "<span class=\"btn btn-primary pull-right btn-lg o_website_form_send o_default_snippet_text\">\n"
+"                                    <span>التالي </span><span class=\"fa fa-long-arrow-left\"/>\n"
+"                                </span>\n"
+"                                <span id=\"o_website_form_result\" class=\"text-danger ml8\"/>"
+
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.product
+msgid "<span class=\"fa fa-chevron-right\" aria-hidden=\"true\"/>\n"
+"                                            <span class=\"sr-only\">Next</span>"
+msgstr "<span class=\"sr-only\">التالي</span> <span class=\"fa fa-chevron-left\" aria-hidden=\"true\"/>"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.address
+msgid "<span>Next </span><span class=\"fa fa-long-arrow-right\"/>"
+msgstr "<span>التالي </span> <span class=\"fa fa-long-arrow-left\"/>"
+
+
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.cart_lines
+msgid "<small><i class=\"fa fa-trash-o\"/> Remove</small>"
+msgstr "<small>إزالة <i class=\"fa fa-trash-o\"/></small>"
+
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.total
+msgid "<span class=\"col-xs-6 text-right h4\">Total:</span>"
+msgstr "<span class=\"col-xs-6 text-right h4\">الإجمالي:</span>"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.total
+msgid "<span class=\"col-xs-6 text-right text-muted\" title=\"Taxes may be updated after providing shipping address\"> Taxes:</span>"
+msgstr "<span class=\"col-xs-6 text-right text-muted\" title=\"Taxes may be updated after providing shipping address\"> الضريبة:</span>"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.total
+msgid "<span class=\"col-xs-6 text-right text-muted\">Subtotal:</span>"
+msgstr "<span class=\"col-xs-6 text-right text-muted\">المجموع:</span>"
+
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.address
+#: model:ir.ui.view,arch_db:website_sale.checkout
+msgid "Shipping Address"
+msgstr "عنوان الشحن"
+
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.confirmation
+msgid "<strong>Order Details:</strong>"
+msgstr "<strong>تفاصيل الطلب:</strong>"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.confirmation
+#: model:ir.ui.view,arch_db:website_sale.report_shop_saleorder_document
+msgid "<strong>Payment Method:</strong>"
+msgstr "<strong>طريقة الدفع:</strong>"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.confirmation
+msgid "<strong>Payment information:</strong>"
+msgstr "<strong>معلومات الدفع:</strong>"
+
+
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.continue_shopping
+msgid "<span class=\"fa fa-long-arrow-left\"/>\n"
+"                <span class=\"hidden-xs\">Continue Shopping</span>\n"
+"                <span class=\"visible-xs-inline\">Continue</span>"
+msgstr "<span class=\"fa fa-long-arrow-right\"/><span class=\"hidden-xs\">عودة للتسوق</span><span class=\"visible-xs-inline\">عودة</span>"
+
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.cart
+msgid "<span class=\"hidden-xs\">Process Checkout</span>\n"
+"                                <span class=\"visible-xs-inline\">Checkout</span>\n"
+"                                <span class=\"fa fa-long-arrow-right\"/>"
+msgstr "<span class=\"hidden-xs\">مواصلة الدفع</span><span class=\"visible-xs-inline\">دفع</span> <span class=\"fa fa-long-arrow-left\"/>"
+
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.wizard_checkout
+msgid "Review Order<span class=\"chevron\"/>"
+msgstr "مراجعة الطلب<span class=\"chevron\"/>"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.wizard_checkout
+msgid "Shipping &amp;"
+msgstr "الشحن و "
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.wizard_checkout
+msgid "Billing<span class=\"chevron\"/>"
+msgstr "الفوترة<span class=\"chevron\"/>"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.wizard_checkout
+msgid "Confirmation<span class=\"chevron\"/>"
+msgstr "التأكيد<span class=\"chevron\"/>"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.extra_info_option
+#: model:ir.ui.view,arch_db:website_sale.wizard_checkout
+msgid "Payment<span class=\"chevron\"/>"
+msgstr "السداد<span class=\"chevron\"/>"
+
+
+#. module: website_sale
+#: code:addons/website_sale/controllers/main.py:496
+#, python-format
+msgid "Some required fields are empty."
+msgstr "بعض الحقول إجبارية"
+
+
+
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.sort
+msgid "<span>Sort by</span>\n"
+"                    <span class=\"caret\"/>"
+msgstr "<span>ترتيب بـ</span>\n"
+"                    <span class=\"caret\"/>"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.sort
+msgid "Price[H-L]"
+msgstr "الأعلى سعراً"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.sort
+msgid "Price[L-H]"
+msgstr "الاقل سعراً"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.sort
+msgid "Name[A-Z]"
+msgstr "أ - ي"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.sort
+msgid "Name[Z-A]"
+msgstr "ي - أ"
+
+
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.checkout
+msgid "Billing Address"
+msgstr "عنوان الفوترة"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.checkout
+msgid "<i class=\"fa fa-plus-square\" aria-hidden=\"true\"/> Add an address"
+msgstr "إضافة عنوان <i class=\"fa fa-plus-square\" aria-hidden=\"true\"/>"
+
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.checkout
+msgid "Confirm <span class=\"fa fa-long-arrow-right\"/>"
+msgstr "تأكيد <span class=\"fa fa-long-arrow-left\"/>"
+
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.checkout
+msgid "<span class=\"fa fa-long-arrow-left\"/> Return to Cart"
+msgstr "<span class=\"fa fa-long-arrow-right\"/> العودة إلى سلة التسوق"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.address_kanban
+msgid "Edit this address"
+msgstr "تعديل هذا العنوان"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.address_kanban
+msgid "Select this address"
+msgstr "إختيار هذا العنوان"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.address_kanban
+msgid "<i class=\"fa fa-check\"/> Ship to this address"
+msgstr "الشحن لهذا العنوان <i class=\"fa fa-check\"/>"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.address
+msgid "Sign Up"
+msgstr "تسجيل مستخدم جديد"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.address
+msgid "<span class=\"fa fa-long-arrow-left\"/> Back"
+msgstr "<span class=\"fa fa-long-arrow-right\"/> رجوع"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.address
+msgid "<span>Next </span><span class=\"fa fa-long-arrow-right\"/>"
+msgstr "<span>التالي </span><span class=\"fa fa-long-arrow-left\"/>"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.payment
+msgid "(processing fees apply)"
+msgstr "(تطبيق رسوم معالجة الطلب)"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.payment
+msgid "<span class=\"fa fa-2x fa-credit-card\"/>\n"
+"                                                Saved Cards"
+msgstr "<span class=\"fa fa-2x fa-credit-card\"/>\n"
+"                                                حفظ البطاقة"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.payment
+msgid "Confirm Order <span class=\"fa fa-long-arrow-right\"/>"
+msgstr "تأكيد الأمر <span class=\"fa fa-long-arrow-left\"/>"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.payment
+msgid "Pay Now <span class=\"fa fa-long-arrow-right\"/>"
+msgstr "أدفع الآن <span class=\"fa fa-long-arrow-left\"/>"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.payment
+msgid "Save my payment data"
+msgstr "حفظ معلومات السداد"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.payment
+msgid "Shop - Select Payment Method"
+msgstr "المتجر - أختر طريقة السداد"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.payment_sale_note
+msgid "I agree to the"
+msgstr "أوافق على "
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.payment_sale_note
+msgid "terms &amp; conditions"
+msgstr "اللوائح والشروط"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.confirmation
+msgid "<i class=\"fa fa-print\"/> Print"
+msgstr "<i class=\"fa fa-print\"/> طباعة"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.order_state_message
+msgid "Your order has been confirmed, thank you for your loyalty."
+msgstr "تم تأكيد طلبك, شكراً لولاءك"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.order_state_message
+msgid "Your payment has been authorized."
+msgstr "تم التحقق من الدفعية"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.order_state_message
+msgid "<i class=\"fa fa-cog\"/> Configure Transfer Details"
+msgstr "<i class=\"fa fa-cog\"/> تحرير تفاصيل الشحن"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.payment_token_form_confirm
+msgid "No, choose another method"
+msgstr "لا, أختر طريقة دفع أخرى"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.payment_token_form_confirm
+msgid "Shop - Confirm payment"
+msgstr "المتجر - تأكيد السداد"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.payment_token_form_confirm
+msgid "Transaction processing ..."
+msgstr "جاري معالجة أمر السداد ..."
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.payment_token_form_confirm
+msgid "Yes, pay with this card"
+msgstr "نعم, أدفع عن طريق هذه البطاقة"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.payment_token_form_confirm
+msgid "! Some processing fees will be applied"
+msgstr "سوف يتم تطبيق بعض الرسوم !"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.payment_token_form_confirm
+msgid "<i class=\"fa fa-3x fa-credit-card text-muted\" aria-hidden=\"true\"/><br/>\n"
+"                                                Are you sure you want to pay with this card: <br/>"
+msgstr "<i class=\"fa fa-3x fa-credit-card text-muted\" aria-hidden=\"true\"/><br/>\n"
+"                                                هل أنت متأكد من رغبتك في الدفع بإستخدام هذه البطاقة <br/>"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.reduction_code
+msgid "This promo code is not available"
+msgstr "رمز الخصم هذا غير متاح"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.suggested_products_list
+msgid "<strong>Add to Cart</strong>"
+msgstr "<strong>اضف الى السلة</strong>"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.suggested_products_list
+msgid "Suggested Accessories:"
+msgstr "الملحقات المقترحة:"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.cart_popover
+msgid "Qty:"
+msgstr "الكمية:"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.cart_popover
+msgid "View Cart ("
+msgstr "عرض سلة التسوق ( "
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.cart_popover
+msgid "items)"
+msgstr "عناصر )"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.extra_info_option
+msgid "Extra Info<span class=\"chevron\"/>"
+msgstr "معلومات إضافية<span class=\"chevron\"/>"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.extra_info
+msgid "Extra Step"
+msgstr "خطوة إضافية"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.extra_info
+msgid "Give us your feedback..."
+msgstr "أترك لنا ملاحظاتك ..."
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.extra_info
+msgid "<span class=\"btn btn-primary pull-right btn-lg o_website_form_send o_default_snippet_text\">\n"
+"                                    <span>Next </span><span class=\"fa fa-long-arrow-right\"/>\n"
+"                                </span>\n"
+"                                <span id=\"o_website_form_result\" class=\"text-danger ml8\"/>"
+msgstr "<span class=\"btn btn-primary pull-right btn-lg o_website_form_send o_default_snippet_text\">\n"
+"                                    <span>التالي </span><span class=\"fa fa-long-arrow-left\"/>\n"
+"                                </span>\n"
+"                                <span id=\"o_website_form_result\" class=\"text-danger ml8\"/>"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.extra_info
+msgid "A document to provide ?"
+msgstr "أي مستند لتزويدنا به؟"
+
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.recommended_products
+msgid "Suggested alternatives:"
+msgstr "البدائل المقترحة:"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.product
+msgid "<span class=\"fa fa-chevron-left\" aria-hidden=\"true\"/>\n"
+"                                            <span class=\"sr-only\">Previous</span>"
+msgstr "<span class=\"fa fa-chevron-right\" aria-hidden=\"true\"/>\n"
+"                                            <span class=\"sr-only\">السابق</span>"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.product
+msgid "<span class=\"fa fa-chevron-right\" aria-hidden=\"true\"/>\n"
+"                                            <span class=\"sr-only\">Next</span>"
+msgstr "<span class=\"fa fa-chevron-left\" aria-hidden=\"true\"/>\n"
+"                                            <span class=\"sr-only\">التالي</span>"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.product
+msgid "<span class=\"fa fa-check\"/>\n"
+"                                <span>In Stock</span>"
+msgstr "<span class=\"fa fa-check\"/>\n"
+"                                <span>متوفر بالمخزن</span>"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.products
+msgid "Click <i>'New'</i> in the top-right corner to create your first product."
+msgstr "أنقر <i>'جديد'</i> على القائمة بأعلى اليمين لإضافة منتجك الأول."
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.search count
+msgid "found)"
+msgstr "وجدت)"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.header
+msgid "<i class=\"fa fa-shopping-cart\"/>\n"
+"                    My cart"
+msgstr "<i class=\"fa fa-shopping-cart\"/>\n"
+"                    سلة التسوق"
+
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.cart
+msgid "Shopping Cart"
+msgstr "سلة التسوق"
+
+
+
+
+
+
+
+#. module: theme_laze
+#: model:ir.ui.view,arch_db:theme_laze.cart
+#: model:ir.ui.view,arch_db:theme_laze.product_brands
+msgid "<span>Shopping Cart</span>"
+msgstr "<span>سلة التسوق</span>"
+
+#. module: theme_laze
+#: model:ir.ui.view,arch_db:theme_laze.clear_all
+msgid "<span class=\"fa fa-trash-o\"/> <span class=\"hidden-xs\">Clear Shopping Cart </span><span class=\"visible-xs-inline\">Clear Shopping Cart</span>"
+msgstr "<span class=\"hidden-xs\">إفراغ سلة التسوق</span><span class=\"visible-xs-inline\">إفراغ سلة التسوق</span> <span class=\"fa fa-trash-o\"/>"
+
+
+
+#. module: theme_laze
+#: model:ir.ui.view,arch_db:theme_laze.product_slider_content
+#: model:ir.ui.view,arch_db:theme_laze.snippet_products_item
+msgid "<span>Add to Cart</span> <i class=\"fa fa-shopping-cart\"/>"
+msgstr "<span>اضف الى السلة </span> <i class=\"fa fa-shopping-cart\"/>"
+
+
+#. module: theme_laze
+#: model:ir.ui.view,arch_db:theme_laze.product_details
+#: model:ir.ui.view,arch_db:theme_laze.products_add_to_cart
+msgid "Add to Cart"
+msgstr "أضف إلى السلة"
+
+
+
+#. module: theme_laze
+#: model:ir.ui.view,arch_db:theme_laze.product_cart
+msgid "Checkout"
+msgstr "إكمال الشراء"
+
+#. module: theme_laze
+#: model:ir.ui.view,arch_db:theme_laze.product_cart
+msgid "item(s) <i class=\"fa fa-shopping-cart\"/> <span class=\"fa fa-angle-down\"/>"
+msgstr "item(s) <i class=\"fa fa-shopping-cart\"/> <span class=\"fa fa-angle-down\"/>"
+
+#. module: theme_laze
+#: model:ir.ui.view,arch_db:theme_laze.layout
+msgid "Hello,"
+msgstr "مرحباً,"
+
+#. module: theme_laze
+#: model:ir.ui.view,arch_db:theme_laze.layout
+msgid "<i class=\"fa fa-heart-o\"/> Wishlist"
+msgstr "<i class=\"fa fa-heart-o\"/> المفضلة"
+
+#. module: theme_laze
+#: model:ir.ui.view,arch_db:theme_laze.layout
+msgid "<i class=\"fa fa-key\"/> Login"
+msgstr "<i class=\"fa fa-key\"/> دخول"
+
+#. module: theme_laze
+#: model:ir.ui.view,arch_db:theme_laze.layout
+msgid "<i class=\"fa fa-key\"/> Register"
+msgstr "<i class=\"fa fa-key\"/> تسجيل"
+
+#. module: theme_laze
+#: model:ir.ui.view,arch_db:theme_laze.layout
+msgid "<i class=\"fa fa-plus-circle\"/>Add..."
+msgstr "<i class=\"fa fa-plus-circle\"/>إضافة..."
+
+#. module: theme_laze
+#: model:ir.ui.view,arch_db:theme_laze.layout
+msgid "<i class=\"fa fa-sign-out\"/> Logout"
+msgstr "<i class=\"fa fa-sign-out\"/> خروج"
+
+#. module: theme_laze
+#: model:ir.ui.view,arch_db:theme_laze.layout
+msgid "<i class=\"fa fa-user\"/> My Account"
+msgstr "<i class=\"fa fa-user\"/> حسابي"
+
+#. module: theme_laze
+#: model:ir.ui.view,arch_db:theme_laze.layout
+msgid "Account <i class=\"fa fa-angle-down\"/>"
+msgstr "الحساب <i class=\"fa fa-angle-down\"/>"
+
+
+#. module: theme_laze
+#: model:ir.ui.view,arch_db:theme_laze.wishlist
+msgid "Cart"
+msgstr "سلة التسوق"
+
+#. module: theme_laze
+#: model:ir.ui.view,arch_db:theme_laze.wishlist
+msgid "<span>Add to Cart</span>"
+msgstr "<span>أضف إلى السلة</span>"
+
+#. module: theme_laze
+#: model:ir.ui.view,arch_db:theme_laze.wishlist
+msgid "<span>Clear Wishlist</span>"
+msgstr "<span>تفريغ المفضلة</span>"
+
+#. module: theme_laze
+#: model:ir.ui.view,arch_db:theme_laze.wishlist
+msgid "<strong>Add to Cart</strong>"
+msgstr "<strong>أضف إلى السلة</strong>"
+
+#. module: theme_laze
+#: model:ir.model.fields,field_description:theme_laze.field_product_wishlist_comment
+#: model:ir.ui.view,arch_db:theme_laze.wishlist
+msgid "Comment"
+msgstr "تعليق"
+
+#. module: theme_laze
+#: model:ir.ui.view,arch_db:theme_laze.wishlist
+msgid "Delete"
+msgstr "حذف"
+
+#. module: theme_laze
+#: model:ir.ui.view,arch_db:theme_laze.wishlist
+msgid "Name"
+msgstr "الاسم"
+
+#. module: theme_laze
+#: model:ir.ui.view,arch_db:theme_laze.wishlist
+msgid "Price"
+msgstr "سعر"
+
+#. module: theme_laze
+#: model:ir.model.fields,field_description:theme_laze.field_product_wishlist_product_id
+#: model:ir.ui.view,arch_db:theme_laze.wishlist
+msgid "Product"
+msgstr "المنتج"
+
+#. module: theme_laze
+#: model:ir.ui.view,arch_db:theme_laze.wishlist
+msgid "Product Wishlist"
+msgstr "قائمة المفضلة"
+
+#. module: theme_laze
+#: model:ir.ui.view,arch_db:theme_laze.wishlist
+msgid "Update Comment"
+msgstr "تحديث التعليق"
+
+#. module: theme_laze
+#: model:ir.ui.view,arch_db:theme_laze.wishlist
+msgid "Your Whishlist is empty!"
+msgstr "ليس لديك عناصر بقائمة المفضلة"
+
+
+
+#. module: website_sale_options
+#: model:ir.ui.view,arch_db:website_sale_options.modal
+msgid "<i class=\"fa fa-chevron-left\"/> <span class=\"hidden-xs\">Continue Shopping</span><span class=\"visible-xs-inline\">Continue</span>"
+msgstr "<i class=\"fa fa-chevron-left\"/> <span class=\"hidden-xs\">عودة للتسوق</span><span class=\"visible-xs-inline\">عودة</span>"
+
+#. module: website_sale_options
+#: model:ir.ui.view,arch_db:website_sale_options.modal
+msgid "<i class=\"fa fa-shopping-cart fa-fw\"/> <span class=\"hidden-xs\">Proceed to checkout</span><span class=\"visible-xs-inline\">Checkout</span>"
+msgstr "<i class=\"fa fa-shopping-cart fa-fw\"/> <span class=\"hidden-xs\">إكمال الشراء</span><span class=\"visible-xs-inline\">شراء</span>"
+
+#. module: website_sale_options
+#: model:ir.ui.view,arch_db:website_sale_options.modal
+msgid "<small>Remove from cart</small>"
+msgstr "<small>إزالة من السلة</small>"
+
+#. module: website_sale_options
+#: model:ir.ui.view,arch_db:website_sale_options.modal
+msgid "<span class=\"js_item\">1 Item</span><span class=\"js_items hidden\">5 Items</span><br/>"
+msgstr "<span class=\"js_item\">عنصر واحد</span><span class=\"js_items hidden\">5 عناصر</span><br/>"

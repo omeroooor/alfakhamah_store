@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="report.paperformat" id="paperformat_alfakhamah_invoice">
+        <field name="name">paperformat.alfakhamah.invoice.report</field>
+        <field name="default" eval="True"/>
+        <field name="format">A4</field>
+        <field name="page_height">0</field>
+        <field name="page_width">0</field>
+        <field name="orientation">Portrait</field>
+        <field name="margin_top">50</field>
+        <field name="margin_right">0</field>
+        <field name="margin_bottom">26</field>
+        <field name="margin_left">0</field>
+        <field name="header_line" eval="False"/>
+        <field name="header_spacing">40</field>
+        <field name="dpi">90</field>
+    </record>
+
+    <report id="alfakhama_invoice_report"
+            model="account.invoice"
+            string="AL Fakhamah Invoice"
+            report_type="qweb-pdf"
+            file="alfakhamah_store.alfakhamah_invoice_template"
+            name="alfakhamah_store.alfakhamah_invoice_template"
+            paperformat="paperformat_alfakhamah_invoice"
+    />
+
+    <template id="alfakhamah_invoice_template">
+        <t t-call="report.html_container">
+            <t t-foreach="docs" t-as="o">
+                <div class="header" style="font-family: Cairo-Bold">
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <img src="/alfakhamah_store/static/src/img/report_header_logo.png" style="max-height: 140px;"/>
+                        </div>
+                        <div class="col-xs-9 text-right">
+                            <p dir="rtl"><h4>الفخامة لمواد البناء والتجارة  ش.م.م</h4></p>
+                            <p dir="ltr"><h4>AL Fakhamah Building Materials &amp; Trade LLC</h4></p>
+                            <p dir="rtl"><h4>س.ت: ١٣٥٧٠٨١ | ص.ب: ١٦٨٨ | ر.ب: ٦١١ | ت: ٩٦٨٩٨٥٥٢٨٨٥+</h4></p>
+                            <p dir="rtl"><h4>محافظة الداخلية. ولاية نزوى. منطقة كرشا الصناعية</h4></p>
+                            <p dir="ltr"><h4>C.R: 1357081 | P.O: 1688 | P.C: 611 | P.N: +968 98552885</h4></p>
+                            <p dir="ltr"><h4>Nizwa Municipal:11184 / Karsha Industrial Area</h4></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="page" style="font-family:Cairo-Bold; font-size:14pt; color:#525252">
+                    <div class="article">
+                        <style type="text/css">
+                            .invoice-lines {border: 0.05cm solid #000 !important}
+                            .invoice-lines thead th {vertical-align: top !important; text-align: center !important}
+                            .special-border {border-right:0.06cm solid #000 !important}
+                            .invoice-lines th:not(.special-border), .invoice-lines td:not(.special-border) {border-right: 0.05cm solid #000 !important}
+                            .info-area {display:block;width:100%;height: 3cm; border: 1px solid #000; margin-bottom:0.5cm;}
+                        </style>
+                        <div class="row">
+                            <div class="col-xs-12 text-center mb4">
+                                <h1><span style="opacity: 0.8">Invoice</span></h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 info-area-box">
+                                <div class="info-area"/>
+                            </div>
+                            <div class="col-xs-6 info-area-box">
+                                <div class="info-area"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 info-area-box">
+                                <div class="info-area"/>
+                            </div>
+                            <div class="col-xs-6 info-area-box">
+                                <div class="info-area"/>
+                            </div>
+                        </div>
+                        <table class="table table-bordered invoice-lines" style="font-size:12pt">
+                            <thead>
+                                <tr>
+                                    <th style="width:1cm">No</th>
+                                    <th class="special-border" style="width:2.2cm;">ITEM NO</th>
+                                    <th class="special-border">DESCRIPTION</th>
+                                    <th style="width:2cm">SALES UNIT</th>
+                                    <th style="width:2cm">QTY</th>
+                                    <th class="special-border" style="width:3cm">UNIT RATE <br/> R.O</th>
+                                    <th style="width:2cm">Amount <br/> R.O</th>
+                                </tr>
+                            </thead>
+                            <tbody class="invoice_tbody">
+                                <tr t-foreach="o.invoice_line_ids" t-as="l">
+                                    <td><span t-esc="l_index + 1"/></td>
+                                    <td class="special-border"><span t-field="l.id"/></td>
+                                    <td class="special-border"><span t-field="l.name"/></td>
+                                    <td><span t-field="l.uom_id"/></td>
+                                    <td><span t-field="l.quantity"/></td>
+                                    <td class="special-border"><span t-field="l.price_unit"/></td>
+                                    <td>
+                                        <span t-field="l.price_subtotal" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: o.currency_id}"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th colspan="6" style="text-align: left;" class="special-border">TOTAL OMR</th>
+                                    <th>
+                                        <span t-field="o.amount_total" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: o.currency_id}"/>
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="terms" style="font-size: 14pt; color:#332f33">
+                            KINDLY INSIST FOR OFFICIAL RECEIPT WHILE MAKING CASH PAYMENT.
+                            <br/>
+                            1% INTEREST PER MONTH ON POART THEREOF  WILL BE CHARGED ON DELAYED PAYMENT.
+                            <br/>
+                            PLEASE ISSUE YOUR CHEQUE IN FAVOR OF
+                            <br/><br/>
+                            
+                            GOODS RECEIVED IN GOOD CONDITIONS.
+                            <br/>
+                            RECEVIER>S NAME
+                            <br/>
+                            SIGNATURE AND DATE
+                            <br/>
+                        </p>
+                        <br/>
+                        <table class="table table-bordered">
+                        <tr>
+                            <th style="text-align:center !important; border-bottom: 0.06cm solid #000 !important;border-right:0.06cm solid #000 !important">ISO DOCUMENT NO</th>
+                            <th style="text-align:center !important; border-bottom: 0.06cm solid #000 !important">REVISION DATE</th>
+                            <th style="text-align:center !important; border-bottom: 0.06cm solid #000 !important">REVISION NO</th>
+                        </tr>
+                        <tr>
+                            <td style="height:1cm !important;border-right:0.06cm solid #000 !important"></td>
+                            <td style="height:1cm !important;"></td>
+                            <td style="height:1cm !important;"></td>
+                        </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="row text-center">
+                        <div class="water-mark">
+                            <img src="/alfakhamah_store/static/src/img/footer-image.png" width="100%" height="130px"/>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </t>
+    </template>
+
+    <template id="alfakhamah_store_report_assets_common_custom_fonts" name="Alfakhamah QWeb fonts" inherit_id="report.assets_common">
+        <xpath expr="." position="inside">
+            <link href="/alfakhamah_store/static/src/css/fonts.css" rel="stylesheet" type="text/less"/>
+        </xpath>
+    </template>
+
+
+</odoo>

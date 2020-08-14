@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Cairo-Black';
+    src: url('/alhadidi_store/static/src/fonts/Cairo-Black.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Cairo-Bold';
+    src: url('/alhadidi_store/static/src/fonts/Cairo-Bold.ttf') format('truetype');
+}
+/*
+@font-face {
+    font-family: 'Cairo-ExtraLight';
+    src: url('/alhadidi_store/static/src/fonts/Cairo-ExtraLight.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Cairo-Light';
+    src: url('/alhadidi_store/static/src/fonts/Cairo-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Cairo-Regular';
+    src: url('/alhadidi_store/static/src/fonts/Cairo-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Cairo-SemiBold';
+    src: url('/alhadidi_store/static/src/fonts/Cairo-SemiBold.ttf') format('truetype');
+}
+*/
