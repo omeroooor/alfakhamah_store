@@ -5,8 +5,8 @@
     <template id="alfakhamah_store_layout_logo_show" inherit_id="theme_laze.layout_logo_show" customize_show="True" name="Show Logo">
 	    <xpath expr="//div[@class='logo']//img[@src='/theme_laze/static/src/img/logo.png']" position="attributes">
             <attribute name="src">/alfakhamah_store/static/src/img/logo.png</attribute>
-            <attribute name="width">103px</attribute>
-            <attribute name="height">80px</attribute>
+            <attribute name="width">78px</attribute>
+            <attribute name="height">60px</attribute>
             <attribute name="title">AL Fakhamah</attribute>
 	    </xpath> 
 	</template>
