@@ -7,6 +7,7 @@
         
         <xpath expr="link[last()]" position="after">
             <link href="/alfakhamah_store/static/src/css/custom.css" rel="stylesheet"/>
+            <link href="/alfakhamah_store/static/src/less/colors.less" rel="stylesheet" type="text/less"/>
             <link href="/alfakhamah_store/static/src/less/custom.less" rel="stylesheet" type="text/less"/>
             <link t-if="lang_direction == 'rtl'" href="/alfakhamah_store/static/src/css/rtl.css" rel="stylesheet"/>
         </xpath>
