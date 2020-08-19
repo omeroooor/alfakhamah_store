@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+    <template id="alfakhamah_store_theme_customize" inherit_id="theme_laze.theme_customize" name="Alfakhamah theme customization">
+        <xpath expr="//div[@id='color']/div[@class='row']/div[@class='col-xs-12'][last()]/label/input" position="attributes">
+            <attribute name="data-xmlid">alfakhamah_store.option_colorPreset19</attribute>
+        </xpath>
+    </template>
+    
+    
+    <template id="option_colorPreset19" name="option_colorPreset19" inherit_id="website.assets_frontend" active="False">
+       <xpath expr="." position="inside">
+            <link href="/alfakhamah_store/static/src/less/options/colors/color-1.less" rel="stylesheet" type="text/less"/>
+        </xpath>
+    </template>
+
+
+</odoo>

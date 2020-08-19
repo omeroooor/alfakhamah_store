@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="alfakhamah_assets" inherit_id="theme_laze.assent_front">
+    <template id="alfakhamah_assets" inherit_id="theme_laze.assent_front" name="alfakhamah_assets">
         <xpath expr="." position="inside">
             <link href="/alfakhamah_store/static/src/css/fonts.css" rel="stylesheet"/>
         </xpath>
@@ -17,4 +17,5 @@
             <script type="text/javascript" src="/alfakhamah_store/static/src/js/theme_front.js"/> 
         </xpath>
     </template>
+
 </odoo>

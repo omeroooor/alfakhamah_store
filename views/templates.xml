@@ -39,5 +39,19 @@
         </xpath>
     </template>
 
+    <template id="alfakhamah_store_theme_customize" inherit_id="theme_laze.theme_customize" name="Alfakhamah theme customization">
+        <xpath expr="//div[@id='color']/div[@class='row']/div[@class='col-xs-12'][last()]" position="after">
+            <div class="col-xs-12">
+                <p class="text-center">Color Preset 19</p>
+                <label class="chd-color-combi">
+                    <div class="row colorPreset19">
+                        
+                    </div>
+                    <input name="colorvar" type="radio" data-xmlid="alfakhamah_store.alfakhamah_store_option_colorPreset1" />
+                </label>
+            </div>
+        </xpath>
+    </template>
+
 
 </odoo>
